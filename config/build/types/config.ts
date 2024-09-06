@@ -1,6 +1,6 @@
 export type BuildMode = "production" | "development";
 
-export interface BuildPath {
+export interface BuildPaths {
   entry: string;
   build: string;
   html: string;
@@ -11,9 +11,9 @@ export interface BuildEnv {
   port: number;
 }
 
-export interface buildOptions {
+export interface BuildOptions {
   mode: BuildMode;
-  paths: BuildPath;
+  paths: BuildPaths;
   isDev: boolean;
   port: number;
 }
