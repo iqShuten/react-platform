@@ -3,18 +3,15 @@ import { Route, Routes } from "react-router-dom";
 import { Link } from "react-router-dom";
 import { AboutPageAsync } from "./pages/AboutPage/AboutPage.async";
 import { MainPageAsync } from "./pages/MainPage/MainPage.async";
-import { Suspense, useContext } from "react";
-import { Theme, ThemeContext } from "./theme/ThemeContext";
+import { Suspense } from "react";
 import { UseTheme } from "./theme/useTheme";
-
-
+import { className } from "./helper/classNames/className";
 
 const App = () => {
-  const {theme, toogleTheme } = UseTheme()
-  
+  const { theme, toogleTheme } = UseTheme();
 
   return (
-    <div className= {`app ${theme}`}>
+    <div className={className("app", {}, [theme])}>
       <button onClick={toogleTheme}>TOOGLE</button>
       <Link to={"/"}>Главная </Link>
       <Link to={"/about"}>О сайте </Link>
