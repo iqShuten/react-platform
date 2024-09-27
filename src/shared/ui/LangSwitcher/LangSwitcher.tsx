@@ -1,7 +1,5 @@
-import React from 'react';
 import { classNames } from 'shared/lib/classNames/classNames';
 import { useTranslation } from 'react-i18next';
-import cls from './LangSwitcher.module.scss';
 import { Button, ThemeButton } from '../Button/Button';
 
 interface LangSwinterProps {
@@ -16,7 +14,7 @@ export const LangSwitcher = ({ className }: LangSwinterProps) => {
   };
   return (
     <Button
-      className={classNames(cls.LangSwinter, {}, [className])}
+      className={classNames('', {}, [className])}
       theme={ThemeButton.CLEAR}
       onClick={toogle}
     >
