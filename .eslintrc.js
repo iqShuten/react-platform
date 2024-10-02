@@ -1,7 +1,10 @@
+const { error } = require('console');
+
 module.exports = {
   env: {
     browser: true,
     es2021: true,
+    jest: true,
   },
   extends: [
     'plugin:react/recommended',
@@ -22,10 +25,11 @@ module.exports = {
     'i18next',
   ],
   rules: {
-    indent: [2, 2],
     'react/jsx-indent-props': [2, 2],
     'react/jsx-indent': [2, 2],
-    'react/jsx-filename-extension': [2, { extensions: ['.js', '.jsx', '.tsx'] }],
+    'react/jsx-filename-extension': [
+      2,
+      { extensions: ['.js', '.jsx', '.tsx'] }],
     'linebreak-style': 0,
     'no-unused-vars': 'warn',
     'react/jsx-props-no-spreading': 'warn',
@@ -36,9 +40,10 @@ module.exports = {
     'react/require-default-props': 'off',
     'react/react-in-jsx-scope': 'off',
     'react/function-component-definition': 'off',
-    'no-whadow': 'off',
+    'no-shadow': 'off',
     'no-underscore-dangle': 'off',
     'i18next/no-literal-string': ['error', { markupOnly: true }],
+    'max-len': ['error', { ignoreComments: true }],
   },
   globals: {
     __IS_DEV__: true,
