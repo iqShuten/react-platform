@@ -9,7 +9,7 @@ interface LangSwinterProps {
 export const LangSwitcher = ({ className }: LangSwinterProps) => {
   const { t, i18n } = useTranslation();
 
-  const toogle = () => {
+  const toogle = async () => {
     i18n.changeLanguage(i18n.language === 'ru' ? 'en' : 'ru');
   };
   return (

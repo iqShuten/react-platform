@@ -2,5 +2,8 @@
   "Язык": "English",
   "Главная страница": "Main page",
   "О сайте": "About page",
-  "Page not found": "Page now found"
+  "Страница не найдена": "Page now found",
+  "Включить ошибку": "Trow error",
+  "Произошла непредвиденная ошибка": "An unexpected error occurred",
+  "Переключатель": "Toggle"
 }

@@ -21,7 +21,11 @@ export const Navbar = ({ className }: NavbarProps) => {
           {t('Главная страница')}
           {' '}
         </AppLink>
-        <AppLink theme={AppLinkTheme.SECONDARY} to="/about">
+        <AppLink
+          theme={AppLinkTheme.SECONDARY}
+          // eslint-disable-next-line i18next/no-literal-string
+          to="/about"
+        >
           {t('О сайте')}
           {' '}
         </AppLink>
