@@ -42,7 +42,12 @@ module.exports = {
     'react/function-component-definition': 'off',
     'no-shadow': 'off',
     'no-underscore-dangle': 'off',
-    'i18next/no-literal-string': ['error', { markupOnly: true }],
+    'i18next/no-literal-string': [
+      'error',
+      {
+        markupOnly: true,
+        ignoreAttribute: ['data-testing', 'to'],
+      }],
     'max-len': ['error', { ignoreComments: true, code: 100 }],
   },
   globals: {
