@@ -10,13 +10,15 @@
     "lint:ts:fix": "eslint **/*{ts,tsx} --fix",
     "lint:scss": "npx stylelint **/*.scss",
     "lint:scss:fix": "npx stylelint **/*.scss --fix",
-    "unit": "jest --config ./config/jest/jest.config.ts",
+    "test:unit": "jest --config ./config/jest/jest.config.ts",
+    "test:ui": "npx loki test",
+    "test:ui:ok": "npx loki approve",
     "storybook": "start-storybook -p 6006 -c ./config/storybook",
-    "build-storybook": "build-storybook -c ./config/storybook"
+    "storybook:build": "build-storybook -c ./config/storybook"
   },
   "keywords": [],
   "private": true,
-  "author": "",
+  "author": "Shuten",
   "license": "ISC",
   "description": "",
   "devDependencies": {
@@ -63,6 +65,7 @@
     "html-webpack-plugin": "^5.5.0",
     "identity-obj-proxy": "^3.0.0",
     "jest": "^27.5.1",
+    "loki": "^0.28.1",
     "mini-css-extract-plugin": "^2.5.3",
     "regenerator-runtime": "^0.13.9",
     "sass": "^1.49.9",
@@ -88,11 +91,26 @@
     "react-router-dom": "^6.2.1"
   },
   "resolutions": {
-    "@storybool/react@npm:10.8.1/webpack" : "^5.691",
+    "@storybool/react@npm:10.8.1/webpack": "^5.691",
     "@storybool/react/webpack": "^5",
     "@storybool/core-common/webpack": "^5",
     "@storybool/core-server/webpack": "^5",
     "@storybool/builder-webpack4/webpack": "^5",
     "@storybool/manager-webpack4/webpack": "^5"
+  },
+  "loki": {
+    "configurations": {
+      "chrome.laptop": {
+        "target": "chrome.docker",
+        "width": 1366,
+        "height": 768,
+        "deviceScaleFactor": 1,
+        "mobile": false
+      },
+      "chrome.iphone7": {
+        "target": "chrome.docker",
+        "preset": "iPhone 7"
+      }
+    }
   }
 }
