@@ -13,7 +13,7 @@ export enum AppRoutes {
 export const RoutePath: Record<AppRoutes, string> = {
   [AppRoutes.MAIN]: '/',
   [AppRoutes.ABOUT]: '/about',
-  [AppRoutes.NOT_FOUND]: '*', // Последний
+  [AppRoutes.NOT_FOUND]: '*', // Страница ошибки
 };
 
 export const routeConfig: Record<AppRoutes, RouteProps> = {
