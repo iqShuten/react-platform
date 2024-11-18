@@ -6,5 +6,7 @@
   "Включить ошибку": "Trow error",
   "Произошла непредвиденная ошибка": "An unexpected error occurred",
   "Переключатель": "Toggle",
-  "Короткий язык": "Eng"
+  "Короткий язык": "Eng",
+  "increment": "increment",
+  "decrement": "decrement"
 }
