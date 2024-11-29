@@ -8,5 +8,6 @@
   "Переключатель": "Toggle",
   "Короткий язык": "Eng",
   "increment": "increment",
-  "decrement": "decrement"
+  "decrement": "decrement",
+  "Вы ввели неверный логин или пароль": "You entered an incorrect username or password"
 }
