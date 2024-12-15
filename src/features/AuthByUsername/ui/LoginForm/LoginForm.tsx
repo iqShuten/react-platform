@@ -8,12 +8,12 @@ import { memo, useCallback } from 'react';
 import { Text, TextTheme } from 'shared/ui/Text/Text';
 import { DynamicModuleLoader, ReducerList } from
   'shared/lib/components/DynamicModuleLoader/DynamicModuleLoader';
- import { getLoginError } from '../../model/selectors/getLoginError/getLoginError';
+import { loginByUsername } from 'features/AuthByUsername/model/services/loginByUsername';
+import { getLoginError } from '../../model/selectors/getLoginError/getLoginError';
 import { getLoginPassword } from '../../model/selectors/getLoginPassword/getLoginPassword';
 import { getLoginIsLoading } from '../../model/selectors/getLoginIsLoading/getLoginIsLoading';
 import { loginActions, loginReducer } from '../../model/slice/loginSlice';
 import cls from './LoginForm.module.scss';
-import { loginByUsername } from '../../model/services/loginByUsername';
 import { getLoginUsername } from '../../model/selectors/getLoginUsername/getLoginUsername';
 
 export interface LoginFormProps {
