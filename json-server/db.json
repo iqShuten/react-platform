@@ -25,6 +25,15 @@
             "password": "123"
           }
         ],
-        "profile": { "name": "typicode" }
+        "profile": { 
+          "first": "Андрей",
+          "lastname": "Мацкевич",
+          "age": "37",
+          "currency": "BYN",
+          "country": "Belarus",
+          "city": "Vitebsk",
+          "username": "Shuten",
+          "avatar": ""      
+        }
       }
       
