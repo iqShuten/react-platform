@@ -5,7 +5,7 @@ import { Input } from 'shared/ui/Input/Input';
 import { useSelector } from 'react-redux';
 import { memo, useCallback } from 'react';
 import { Text, TextTheme } from 'shared/ui/Text/Text';
-import { DynamicModuleLoader, ReducerList } from
+import { DynamicModuleLoader, ReducersList } from
   'shared/lib/components/DynamicModuleLoader/DynamicModuleLoader';
 import { loginByUsername } from 'features/AuthByUsername/model/services/loginByUsername';
 import { useAppDispatch } from 'shared/lib/hooks/useAppDispatch';
@@ -21,7 +21,7 @@ export interface LoginFormProps {
   onSuccess: () => void;
 }
 
-const initialReducers: ReducerList = {
+const initialReducers: ReducersList = {
   loginForm: loginReducer,
 };
 

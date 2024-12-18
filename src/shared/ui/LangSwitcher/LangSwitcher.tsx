@@ -1,5 +1,6 @@
 import { classNames } from 'shared/lib/classNames/classNames';
 import { useTranslation } from 'react-i18next';
+import { memo } from 'react';
 import { Button, ButtonTheme } from '../Button/Button';
 
 interface LangSwinterProps {
@@ -7,7 +8,7 @@ interface LangSwinterProps {
   short?: boolean;
 }
 
-export const LangSwitcher = ({ className, short }: LangSwinterProps) => {
+export const LangSwitcher = memo(({ className, short }: LangSwinterProps) => {
   const { t, i18n } = useTranslation();
 
   const toogle = async () => {
@@ -22,4 +23,4 @@ export const LangSwitcher = ({ className, short }: LangSwinterProps) => {
       {t(short ? 'Короткий язык' : 'Язык')}
     </Button>
   );
-};
+});
