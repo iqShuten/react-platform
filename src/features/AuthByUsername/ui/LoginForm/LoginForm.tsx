@@ -10,11 +10,11 @@ import { DynamicModuleLoader, ReducersList } from
 import { loginByUsername } from 'features/AuthByUsername/model/services/loginByUsername';
 import { useAppDispatch } from 'shared/lib/hooks/useAppDispatch';
 import { getLoginError } from '../../model/selectors/getLoginError/getLoginError';
-import { getLoginUsername } from '../../model/selectors/getLoginUsername/getLoginUsername';
 import { getLoginPassword } from '../../model/selectors/getLoginPassword/getLoginPassword';
 import { getLoginIsLoading } from '../../model/selectors/getLoginIsLoading/getLoginIsLoading';
 import { loginActions, loginReducer } from '../../model/slice/loginSlice';
 import cls from './LoginForm.module.scss';
+import { getLoginUsername } from '../../model/selectors/getLoginUsername/getLoginUsername';
 
 export interface LoginFormProps {
   className?: string;
