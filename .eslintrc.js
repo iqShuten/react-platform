@@ -1,5 +1,3 @@
-const { error } = require('console');
-
 module.exports = {
   env: {
     browser: true,
@@ -32,7 +30,8 @@ module.exports = {
       2,
       { extensions: ['.js', '.jsx', '.tsx'] }],
     'linebreak-style': 0,
-    'no-unused-vars': 'warn',
+    'no-unused-vars': 'off',
+    '@typescript-eslint/no-unused-vars': ['warn'],
     'react/jsx-props-no-spreading': 'warn',
     'import/no-unresolved': 'off',
     'import/extensions': 'off',
