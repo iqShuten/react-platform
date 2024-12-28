@@ -54,6 +54,7 @@ module.exports = {
     'react-hooks/rules-of-hooks': 'error', // проверка правил хуков
     'react-hooks/exhaustive-deps': 'error', // проверка зависимостей эффектов
     'no-param-reassign': 'off',
+    'no-undef': 'off',
   },
   globals: {
     __IS_DEV__: true,
