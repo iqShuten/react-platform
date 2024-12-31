@@ -15,3 +15,7 @@ export {
 export {
   ProfileCard,
 } from './ui/ProfileCard/ProfileCard';
+
+export { getProfileIsLoading } from './model/selector/getProfileIsLoading/getProfileIsLoading';
+export { getProfileData } from './model/selector/getProfileData/getProfileData';
+export { getProfileError } from './model/selector/getProfileError/getProfileError';
