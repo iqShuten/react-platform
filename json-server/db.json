@@ -1,39 +1,38 @@
+{
+  "posts": [
     {
-        "posts": [
-          {
-            "id": 1,
-            "title": "json-server",
-            "userId": 1
-          },
-          {
-            "id": 2,
-            "title": "json-server",
-            "userId": 2
-          }
-        ],
-        "comments": [
-          {
-            "id": 1,
-            "body": "some comment",
-            "postId": 1
-          }
-        ],
-        "users": [
-          {
-            "id": 1,
-            "username": "admin",
-            "password": "123"
-          }
-        ],
-        "profile": { 
-          "first": "Андрей",
-          "lastname": "Мацкевич",
-          "age": "37",
-          "currency": "BYN",
-          "country": "Belarus",
-          "city": "Vitebsk",
-          "username": "Shuten",
-          "avatar": ""      
-        }
-      }
-      
+      "id": 1,
+      "title": "json-server",
+      "userId": 1
+    },
+    {
+      "id": 2,
+      "title": "json-server",
+      "userId": 2
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "username": "admin",
+      "password": "123"
+    }
+  ],
+  "profile": {
+    "first": "Андрей",
+    "lastname": "Мацкевич",
+    "age": 37,
+    "currency": "RUB",
+    "country": "Belarus",
+    "city": "Витебск",
+    "username": "Shuten",
+    "avatar": "https://cs14.pikabu.ru/post_img/big/2023/02/13/8/1676295806139337963.png"
+  }
+}
