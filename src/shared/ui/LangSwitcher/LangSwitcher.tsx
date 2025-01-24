@@ -20,7 +20,7 @@ export const LangSwitcher = memo(({ className, short }: LangSwinterProps) => {
       theme={ButtonTheme.CLEAR}
       onClick={toogle}
     >
-      {t(short ? 'Короткий язык' : 'Язык')}
+      {t(short ? 'Short language' : 'Language')}
     </Button>
   );
 });

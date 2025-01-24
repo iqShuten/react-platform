@@ -13,7 +13,31 @@
   "stylelint.validate": [
     "scss"
   ],
-  "i18n-ally.keystyle": "nested",
-  "i18n-ally.sourceLanguage": "ru",
-  "i18n-ally.displayLanguage": "ru"
+  "i18n-ally.namespace": true,
+  "i18n-ally.sortKeys": true,
+  "i18n-ally.keepFulfilled": false,
+  "i18n-ally.keystyle": "flat",
+  "i18n-ally.extract.autoDetect": true,
+  "i18n-ally.refactor.templates": [
+   {
+     "source": "html-attribute",
+     "templates": [
+       "t('{key}')",
+     ],
+     "include": [
+       "src/**/*.{tsx,ts}",
+       "index.html"
+     ],
+     "exclude": [
+       "src/config/**"
+     ]
+    }
+  ],
+  "i18n-ally.extract.parsers.html": {
+    "attributes": ["text", "title", "alt", "placeholder", "label", "aria-label"],
+    "ignoredTags": ["script", "style"],
+    "vBind": true,
+    "inlineText": true
+},
+"i18n-ally.translate.fallbackToKey": true,
 }

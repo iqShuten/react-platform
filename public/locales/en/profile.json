@@ -1,4 +1,17 @@
 {
-    "Профиль": "Profile",
-     "Редактировать": "Edit"
+  "Avatar": "Avatar",
+  "Data not provided": "Data not provided",
+  "First and last name are required": "First and last name qre required",
+  "Incorrect age": "Incorrect age",
+  "Incorrect country": "Incorrect country",
+  "Server error when saving": "Server error when saving",
+  "There was an error loading your profile": "There was an error loading your profile",
+  "Try refreshing the page": "Try to refreshing the page",
+  "You avatar": "You avatar",
+  "You name": "You name",
+  "Your age": "You age",
+  "Your city": "You city",
+  "Your last name": "You last name",
+  "Your nickname": "You nickname",
+  "data-not-provided": "Data not provided"
 }

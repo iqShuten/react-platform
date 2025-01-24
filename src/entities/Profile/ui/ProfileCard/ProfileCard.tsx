@@ -59,8 +59,8 @@ export const ProfileCard = (props: ProfileCardProps) => {
       <div className={classNames(cls.ProfileCard, {}, [className, cls.error])}>
         <Text
           theme={TextTheme.ERROR}
-          title={t('Произошла ошибка при загрузке профиля')}
-          text={t('Попробуйте обновить страницу')}
+          title={t('There was an error loading your profile')}
+          text={t('Try refreshing the page')}
           alight={TextAlight.CENTER}
         />
       </div>
@@ -76,34 +76,34 @@ export const ProfileCard = (props: ProfileCardProps) => {
       <div className={cls.data}>
         {data?.avatar && (
           <div className={cls.avatarWrapper}>
-            <Avatar src={data?.avatar} alt={t('Аватар')} />
+            <Avatar src={data?.avatar} alt={t('Avatar')} />
           </div>
         )}
 
         <Input
           value={data?.first}
-          placeholder={t('Ваше имя')}
+          placeholder={t('You name')}
           className={cls.input}
           onChange={onChangeFirstname}
           readOnly={readonly}
         />
         <Input
           value={data?.lastname}
-          placeholder={t('Ваше фамилия')}
+          placeholder={t('Your last name')}
           className={cls.input}
           onChange={onChangeLastname}
           readOnly={readonly}
         />
         <Input
           value={data?.username}
-          placeholder={t('Ваш никнейм')}
+          placeholder={t('Your nickname')}
           className={cls.input}
           onChange={onChangeUsername}
           readOnly={readonly}
         />
         <Input
           value={data?.age}
-          placeholder={t('Ваш возраст')}
+          placeholder={t('Your age')}
           className={cls.input}
           onChange={onChangeAge}
           readOnly={readonly}
@@ -116,7 +116,7 @@ export const ProfileCard = (props: ProfileCardProps) => {
         />
         <Input
           value={data?.city}
-          placeholder={t('Ваш город')}
+          placeholder={t('Your city')}
           className={cls.input}
           onChange={onChangeCity}
           readOnly={readonly}
@@ -129,7 +129,7 @@ export const ProfileCard = (props: ProfileCardProps) => {
         />
         <Input
           value={data?.avatar}
-          placeholder={t('Ваш аватар')}
+          placeholder={t('You avatar')}
           className={cls.input}
           onChange={onChangeAvatar}
           readOnly={readonly}

@@ -1,4 +1,17 @@
 {
-    "Профиль": "Профиль",
-    "Редактировать": "Редактировать"
+  "Avatar": "Аватар",
+  "Data not provided": "Необходимо ввести данные",
+  "First and last name are required": "Имя и фамилия обязательны",
+  "Incorrect age": "Неверный возраст",
+  "Incorrect country": "Неверная страна",
+  "Server error when saving": "Ошибка сервера при сохранении",
+  "There was an error loading your profile": "Ошибка при загрузке Вашего профиля",
+  "Try refreshing the page": "Попробуйте перезагрузить страницу",
+  "You avatar": "Ваш аватар",
+  "You name": "Ваше имя",
+  "Your age": "Ваш возраст",
+  "Your city": "Ваш город",
+  "Your last name": "Ваша фамилия",
+  "Your nickname": "Ваш никнейм",
+  "data-not-provided": "Data not provided"
 }
