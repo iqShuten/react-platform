@@ -76,7 +76,14 @@ export const ProfileCard = (props: ProfileCardProps) => {
       <div className={cls.data}>
         {data?.avatar && (
           <div className={cls.avatarWrapper}>
-            <Avatar src={data?.avatar} alt={t('Avatar')} />
+            <Avatar
+              src={
+              __PROJECT__ !== 'storybook'
+                ? data?.avatar
+                : 'https://avatarzo.ru/wp-content/uploads/squid-game-anime.jpg'
+}
+              alt={t('Avatar')}
+            />
           </div>
         )}
 
