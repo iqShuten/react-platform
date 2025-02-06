@@ -11,5 +11,10 @@
   "Short language": "en",
   "Language": "English",
   "Home page": "Home page",
-  "About": "About"
+  "About": "About",
+  "Save": "Save",
+  "Cancel": "Cancel",
+  "Edit": "Edit",
+  "Profile": "Profile",
+  "Log out": "Log out"
 }
