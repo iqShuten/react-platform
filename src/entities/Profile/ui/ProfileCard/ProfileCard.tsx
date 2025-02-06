@@ -74,14 +74,17 @@ export const ProfileCard = (props: ProfileCardProps) => {
   return (
     <div className={classNames(cls.ProfileCard, mods, [className])}>
       <div className={cls.data}>
-        { (__PROJECT__ !== 'storybook' && data?.avatar && (
+        {data?.avatar && (
           <div className={cls.avatarWrapper}>
             <Avatar
-              src={data?.avatar}
+              src={
+                data?.avatar
+                || 'https://cs14.pikabu.ru/post_img/big/2023/02/13/8/1676295806139337963.png'
+              }
               alt={t('Avatar')}
             />
           </div>
-        ))}
+        )}
 
         <Input
           value={data?.first}
