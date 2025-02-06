@@ -74,18 +74,14 @@ export const ProfileCard = (props: ProfileCardProps) => {
   return (
     <div className={classNames(cls.ProfileCard, mods, [className])}>
       <div className={cls.data}>
-        {data?.avatar && (
+        { (__PROJECT__ !== 'storybook' && data?.avatar && (
           <div className={cls.avatarWrapper}>
             <Avatar
-              src={
-              __PROJECT__ !== 'storybook'
-                ? data?.avatar
-                : 'https://avatarzo.ru/wp-content/uploads/squid-game-anime.jpg'
-}
+              src={data?.avatar}
               alt={t('Avatar')}
             />
           </div>
-        )}
+        ))}
 
         <Input
           value={data?.first}
