@@ -77,9 +77,7 @@ export const ProfileCard = (props: ProfileCardProps) => {
         {data?.avatar && (
           <div className={cls.avatarWrapper}>
             <Avatar
-              src={__PROJECT__ !== 'storybook'
-                ? data?.avatar
-                : 'https://cdn.freelance.ru/img/portfolio/pics/00/43/68/4417745.jpg?mt=7595ad4f'}
+              src={data?.avatar}
               alt={t('Avatar')}
             />
           </div>
