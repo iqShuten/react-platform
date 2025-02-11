@@ -75,12 +75,12 @@ export const ProfileCard = (props: ProfileCardProps) => {
     <div className={classNames(cls.ProfileCard, mods, [className])}>
       <div className={cls.data}>
         {data?.avatar && (
-          <div className={cls.avatarWrapper}>
-            <Avatar
-              src={data?.avatar}
-              alt={t('Avatar')}
-            />
-          </div>
+        <div className={cls.avatarWrapper}>
+          <Avatar
+            src={data?.avatar}
+            alt={t('Avatar')}
+          />
+        </div>
         )}
 
         <Input

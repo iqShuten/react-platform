@@ -2,6 +2,7 @@ import React from 'react';
 import { ComponentMeta, ComponentStory } from '@storybook/react';
 import { Country } from 'entities/Country';
 import { Currency } from 'entities/Currency';
+// import avatar from 'src/shared/assets/tests/storybook_avatar.png'; (убрано из-за проблем Github actions)
 import { ProfileCard } from './ProfileCard';
 
 export default {
@@ -24,6 +25,7 @@ Primary.args = {
     first: 'Dron',
     city: 'Vitebsk',
     currency: Currency.USD,
+    //  avatar, (убрано из-за проблем Github actions)
   },
 
 };

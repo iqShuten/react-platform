@@ -4,7 +4,7 @@ import { Theme } from 'app/providers/ThemeProvider';
 import { ThemeDecorator } from 'shared/config/storybook/ThemeDecorator/ThemeDecorator';
 import { StoreDecorator } from 'shared/config/storybook/StoreDecorator/StoreDecorator';
 import { Country } from 'entities/Country';
-import avatar from 'shared/assets/tests/storybook_avatar.png';
+// import avatar from 'shared/assets/tests/storybook_avatar.png'; (убрано из-за проблем Github actions)
 import { Currency } from 'entities/Currency';
 import ProfilePage from './ProfilePage';
 
@@ -30,7 +30,7 @@ Light.decorators = [StoreDecorator({
       first: 'Dron',
       city: 'Vitebsk',
       currency: Currency.USD,
-      avatar,
+      // avatar, (убрано из-за проблем Github actions)
     },
   },
 })];
@@ -49,7 +49,7 @@ Dark.decorators = [
         first: 'Dron',
         city: 'Vitebsk',
         currency: Currency.USD,
-        avatar,
+        // avatar, (убрано из-за проблем Github actions)
       },
     },
   })];
